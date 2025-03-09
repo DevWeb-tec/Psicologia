@@ -408,24 +408,3 @@ form {
     text-align: center;
   }
 
-  footer {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  background-color: #333; /* Fundo escuro para contraste */
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white; /* Deixa o link branco */
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #007bff; /* Azul ao passar o mouse */
-}
