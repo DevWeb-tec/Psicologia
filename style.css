@@ -187,9 +187,10 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+/* Footer */
 footer {
-  background: #3498db; /* Azul correto */
-  color: #fff; /* Texto branco */
+  background: #3498db;
+  color: #fff;
   text-align: center;
   padding: 1rem 0;
 }
