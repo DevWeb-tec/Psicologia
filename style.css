@@ -73,6 +73,7 @@ body {
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  margin-top: 40px; /* Aumente conforme necessário */
 }
 
 .hero p {
@@ -290,7 +291,7 @@ footer {
   .menu-items li {
     padding: 1rem;
   }
-}
+
 /* Seção Contato */
 .contato {
   padding: 5rem 0;
