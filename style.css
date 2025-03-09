@@ -231,9 +231,7 @@ footer {
     width: 200px; /* Imagem menor */
   }
 
-  .btn {
-    padding: 0.8rem 1.5rem; /* Botão mais compacto */
-  }
+  
 }
 .logo {
   display: flex;
@@ -418,3 +416,31 @@ form {
     width: 100%;
     text-align: center;
   }
+
+  /* Estilização do botão */
+.btn {
+  display: inline-block; /* Mantém como botão */
+  background: #3498db; /* Cor azul */
+  color: #fff; /* Texto branco */
+  padding: 1rem 2rem; /* Aumenta o espaço interno */
+  font-size: 1.2rem; /* Tamanho do texto */
+  font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efeito hover */
+.btn:hover {
+  background: #2980b9; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .btn {
+    width: 100%; /* Faz o botão ocupar toda a largura da tela */
+    text-align: center;
+    padding: 1rem; /* Ajusta o tamanho */
+    font-size: 1rem; /* Texto menor */
+  }
+}
