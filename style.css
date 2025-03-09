@@ -68,6 +68,7 @@ body {
   text-align: center;
   color: #fff;
   padding-top: 110px;
+  margin-top: 60px; /* Ajuste conforme necessário */
 }
 
 .hero h2 {
@@ -102,7 +103,9 @@ body {
 
 .sobre .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 3rem;
 }
 
