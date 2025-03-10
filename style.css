@@ -480,5 +480,9 @@ form {
     padding: 1.2rem 2.5rem; /* Faz o botão maior */
     display: inline-block !important; /* Garante visibilidade */
     margin-top: 20px; /* Dá espaço para não ficar colado no texto */
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
   }
 }
