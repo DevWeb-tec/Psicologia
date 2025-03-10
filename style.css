@@ -445,13 +445,9 @@ form {
   }
 }
 
-.onda {
+.separador {
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.onda svg {
-  display: block;
-  width: 100%;
-  height: 80px; /* Altura da onda */
+  height: 2px; /* Espessura da linha */
+  background: #ddd; /* Cor da linha */
+  margin: 50px 0; /* Espaçamento acima e abaixo */
 }
