@@ -484,7 +484,8 @@ form {
     margin-top: 20px; /* Dá espaço para não ficar colado no texto */
     visibility: visible !important;
     opacity: 1 !important;
-    position: relative !important;
-    z-index: 10 !important;
+    position: relative;
+    z-index: 9999 !important;
+   
   }
 }
