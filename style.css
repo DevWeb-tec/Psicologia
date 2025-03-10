@@ -234,14 +234,16 @@ footer {
   
 }
 .logo {
-  display: flex;
-  align-items: center;
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 1.5rem;
+  color: #2c3e50;
 }
 
 .logo-img {
   width: 60px; /* Ajuste a largura da imagem */
   height: 60px; /* Ajuste a altura da imagem */
   margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  vertical-align: middle;  /* Mantém alinhado ao centro */
 }
 .logo a {
   text-decoration: none; /* Remove o sublinhado */
