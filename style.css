@@ -452,3 +452,10 @@ form {
 
 .blog h2 {
   text-align: center; /* Centraliza o texto */
+}
+@media (min-width: 1024px) {
+  .hero .container {
+    min-width: 700px;
+  }
+}
+
