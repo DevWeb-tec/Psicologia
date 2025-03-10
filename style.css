@@ -208,6 +208,14 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem; /* Título menor */
+  }
+
+  .sobre img {
+    width: 200px; /* Imagem menor */
+  }
+
   .menu ul {
     display: none;
   }
@@ -220,18 +228,6 @@ footer {
   .contato-info {
     flex-direction: column;
   }
-}
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem; /* Título menor */
-  }
-
-  .sobre img {
-    width: 200px; /* Imagem menor */
-  }
-
-  
 }
 .logo {
   align-items: center; /* Centraliza verticalmente */
