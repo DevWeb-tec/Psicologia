@@ -478,7 +478,7 @@ form {
 
   .btn {
     padding: 1.2rem 2.5rem; /* Faz o botão maior */
-    display: inline-block; /* Garante visibilidade */
+    display: inline-block !important; /* Garante visibilidade */
     margin-top: 20px; /* Dá espaço para não ficar colado no texto */
   }
 }
