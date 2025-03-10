@@ -444,3 +444,14 @@ form {
     font-size: 1rem; /* Texto menor */
   }
 }
+
+.onda {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.onda svg {
+  display: block;
+  width: 100%;
+  height: 80px; /* Altura da onda */
+}
