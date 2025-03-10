@@ -239,8 +239,8 @@ footer {
 }
 
 .logo-img {
-  width: 40px; /* Ajuste a largura da imagem */
-  height: 40px; /* Ajuste a altura da imagem */
+  width: 60px; /* Ajuste a largura da imagem */
+  height: 60px; /* Ajuste a altura da imagem */
   margin-right: 10px; /* Espaçamento entre a imagem e o texto */
 }
 .logo a {
