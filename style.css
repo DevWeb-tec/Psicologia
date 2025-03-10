@@ -51,6 +51,7 @@ body {
 .menu ul li a:hover {
   color: #3498db;
 }
+
 /* Seção Hero */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -58,22 +59,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Altura mínima para evitar cortes */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 80px 20px; /* Mais espaçamento no topo e nas laterais */
-  flex-direction: column; /* Garante que tudo fique alinhado corretamente */
+  padding: 120px 20px 80px; /* Ajuste o padding-top para 120px (ou o valor que preferir) */
 }
 
 .hero .container {
-  width: 100%;
-  max-width: 600px; /* Para evitar que o conteúdo fique muito esticado */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 800px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero h2 {
@@ -84,37 +82,42 @@ body {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  padding: 0 15px; /* Adiciona margem interna para evitar que encoste nas bordas */
 }
 
-/* Ajuste específico para telas menores */
-@media (max-width: 768px) {
-  .hero {
-    padding: 120px 20px 40px; /* Ajusta mais espaço no topo */
-  }
+.hero .btn {
+  padding: 1rem 2rem;
+  background: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
 
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .btn {
-    padding: 0.8rem 1.5rem; /* Botão mais compacto */
-  }
+.hero .btn:hover {
+  background: #2980b9;
 }
 /* Seção Sobre */
 .sobre {
   padding: 5rem 0;
   background: #f9f9f9;
+  text-align: center; /* Centraliza todo o conteúdo da seção */
 }
 
 .sobre .container {
   display: flex;
   align-items: center;
   gap: 3rem;
+  max-width: 1200px; /* Define uma largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 0 20px; /* Adiciona um padding lateral para telas menores */
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
 }
 
 .sobre img {
@@ -123,6 +126,9 @@ body {
   margin-top: 30px; /* Ajuste esse valor conforme necessário */
 }
 
+.sobre .texto {
+  text-align: justify; /* Justifica o texto do parágrafo */
+}
 /* Seção Especialidades */
 .especialidades {
   padding: 7rem 0;
@@ -453,39 +459,48 @@ form {
   text-align: center; /* Centraliza o texto */
 }
 
-/* Ajuste para telas maiores */
-@media (min-width: 1024px) {
-  .hero .container {
-    min-width: 700px;
-  }
+/* Estilo do botão */
+.btn {
+  padding: 1.2rem 2.5rem;
+  display: inline-block;
+  margin-top: 20px;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  z-index: 9999;
+  background: #3498db;
+  color: #fff !important; /* Força a cor do texto */
+  border-radius: 5px;
+  text-decoration: none !important; /* Remove sublinhado */
+  transition: background 0.3s ease-in-out;
+  border: none; /* Remove borda padrão */
+  cursor: pointer; /* Adiciona cursor de ponteiro */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
 }
 
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Ajuste para telas maiores */
 @media (min-width: 1024px) {
-  .hero {
-    padding: 100px 20px; /* Mantém espaçamento adequado */
-  }
-
-  .hero .container {
-    max-width: 900px; /* Ajuste conforme necessário */
-    text-align: center; /* Alinhar à esquerda para evitar excesso de centralização */
-  }
-
-  .hero h2 {
-    font-size: 3rem; /* Aumenta o tamanho do título */
-  }
-
-  .hero p {
-    font-size: 1.4rem;
-  }
-
-  .btn {
-    padding: 1.2rem 2.5rem; /* Faz o botão maior */
-    display: inline-block !important; /* Garante visibilidade */
-    margin-top: 20px; /* Dá espaço para não ficar colado no texto */
+  .hero .btn {
+    padding: 1.2rem 2.5rem;
+    display: inline-block !important; /* Garante que o botão seja exibido */
+    margin-top: 20px;
     visibility: visible !important;
     opacity: 1 !important;
     position: relative;
     z-index: 9999 !important;
-   
+    background: #3498db;
+    color: #fff !important;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .hero .btn:hover {
+    background: #2980b9;
   }
 }
