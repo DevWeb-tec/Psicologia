@@ -452,3 +452,5 @@ form {
   margin: 50px 0; /* Espaçamento acima e abaixo */
 }
 
+.blog h2 {
+  text-align: center; /* Centraliza o texto */
