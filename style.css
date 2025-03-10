@@ -458,3 +458,27 @@ form {
   }
 }
 
+@media (min-width: 1024px) {
+  .hero {
+    padding: 100px 20px; /* Mantém espaçamento adequado */
+  }
+
+  .hero .container {
+    max-width: 800px; /* Ajuste conforme necessário */
+    text-align: left; /* Alinhar à esquerda para evitar excesso de centralização */
+  }
+
+  .hero h2 {
+    font-size: 3rem; /* Aumenta o tamanho do título */
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 1.2rem 2.5rem; /* Faz o botão maior */
+    display: inline-block; /* Garante visibilidade */
+    margin-top: 20px; /* Dá espaço para não ficar colado no texto */
+  }
+}
