@@ -452,6 +452,8 @@ form {
 .blog h2 {
   text-align: center; /* Centraliza o texto */
 }
+
+/* Ajuste para telas maiores */
 @media (min-width: 1024px) {
   .hero .container {
     min-width: 700px;
@@ -464,8 +466,8 @@ form {
   }
 
   .hero .container {
-    max-width: 800px; /* Ajuste conforme necessário */
-    text-align: left; /* Alinhar à esquerda para evitar excesso de centralização */
+    max-width: 900px; /* Ajuste conforme necessário */
+    text-align: center; /* Alinhar à esquerda para evitar excesso de centralização */
   }
 
   .hero h2 {
