@@ -503,4 +503,22 @@ form {
   .hero .btn:hover {
     background: #2980b9;
   }
+
+  footer a.link-destaque {
+  background-color: white;
+  color: #2980b9;
+  padding: 4px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+footer a.link-destaque:hover {
+  background-color: #f0f0f0;
+  color: #1a5276;
+}
+
+}
+
+  
