@@ -1,4 +1,3 @@
-/* Reset e base */
 * {
   margin: 0;
   padding: 0;
@@ -35,23 +34,6 @@ body {
 .logo {
   font-size: 1.5rem;
   color: #2c3e50;
-  align-items: center;
-}
-
-.logo-img {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo a:hover {
-  color: inherit;
 }
 
 .menu ul {
@@ -61,51 +43,13 @@ body {
 
 .menu ul li a {
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
   padding: 0.5rem 1rem;
-  font-weight: bold;
   transition: color 0.3s;
 }
 
 .menu ul li a:hover {
   color: #3498db;
-}
-
-.menu-scroll {
-  background: #3498db !important;
-  transition: background 0.3s ease-in-out;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #2c3e50;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.menu-items {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background: white;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.menu-items.active {
-  display: flex;
-}
-
-.menu-items li {
-  padding: 1rem;
 }
 
 /* Seção Hero */
@@ -121,11 +65,11 @@ body {
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 120px 20px 80px;
+  padding: 120px 20px 80px; /* Ajuste o padding-top para 120px (ou o valor que preferir) */
 }
 
 .hero .container {
-  max-width: 800px;
+  max-width: 800px; /* Ajuste conforme necessário */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -140,66 +84,51 @@ body {
   margin-bottom: 2rem;
 }
 
-.btn,
 .hero .btn {
-  display: inline-block;
+  padding: 1rem 2rem;
   background: #3498db;
-  color: #fff !important;
-  padding: 1.2rem 2.5rem;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  text-decoration: none !important;
-  border-radius: 5px;
   transition: background 0.3s ease-in-out;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  position: relative;
-  z-index: 9999;
-  visibility: visible;
-  opacity: 1;
-  text-align: center;
 }
 
-.btn:hover,
 .hero .btn:hover {
   background: #2980b9;
 }
-
 /* Seção Sobre */
 .sobre {
   padding: 5rem 0;
   background: #f9f9f9;
-  text-align: center;
+  text-align: center; /* Centraliza todo o conteúdo da seção */
 }
 
 .sobre .container {
   display: flex;
   align-items: center;
   gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  max-width: 1200px; /* Define uma largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 0 20px; /* Adiciona um padding lateral para telas menores */
 }
 
 .sobre h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
 }
 
 .sobre img {
   width: 300px;
   border-radius: 0;
-  margin-top: 30px;
+  margin-top: 30px; /* Ajuste esse valor conforme necessário */
 }
 
-.sobre .texto,
-#sobre .texto p {
-  text-align: justify;
+.sobre .texto {
+  text-align: justify; /* Justifica o texto do parágrafo */
 }
-
 /* Seção Especialidades */
 .especialidades {
   padding: 7rem 0;
@@ -239,20 +168,10 @@ body {
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
-  align-items: stretch;
 }
 
-.info,
-form {
+.info {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info p {
@@ -260,6 +179,13 @@ form {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 input,
@@ -278,37 +204,6 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Blog */
-#blog {
-  scroll-margin-top: 100px;
-  padding: 5rem 0;
-}
-
-.blog .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.blog .texto {
-  flex: 1;
-  text-align: justify;
-  width: 100%;
-}
-
-.blog img {
-  max-width: 30%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.blog h2 {
-  text-align: center;
-}
-
 /* Footer */
 footer {
   background: #2980b9;
@@ -317,44 +212,204 @@ footer {
   padding: 1rem 0;
 }
 
-footer a.link-destaque {
-  background-color: white;
-  color: #2980b9;
-  padding: 4px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-footer a.link-destaque:hover {
-  background-color: #f0f0f0;
-  color: #1a5276;
-}
-
-/* Separador */
-.separador {
-  width: 100%;
-  height: 2px;
-  background: #ddd;
-  margin: 50px 0;
-}
-
 /* Responsivo */
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Título menor */
   }
 
   .sobre img {
-    width: 200px;
+    width: 200px; /* Imagem menor */
+  }
+
+  .menu ul {
+    display: none;
   }
 
   .sobre .container {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .contato-info {
+    flex-direction: column;
+  }
+}
+.logo {
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.logo-img {
+  width: 60px; /* Ajuste a largura da imagem */
+  height: 60px; /* Ajuste a altura da imagem */
+  margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  vertical-align: middle;  /* Mantém alinhado ao centro */
+}
+.logo a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Mantém a cor original do texto */
+}
+
+.logo a:hover {
+  color: inherit; /* Mantém a cor original ao passar o mouse */
+}
+#sobre .texto p {
+  text-align: justify;
+}
+/* Ocultar o menu por padrão em telas menores */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2c3e50;
+  position: absolute; /* Adicionando para posicionamento absoluto */
+  right: 10px; /* Ajuste conforme necessário para o espaçamento */
+  top: 10px; /* Ajuste a altura para onde o botão aparecerá */
+}
+
+/* Mostrar o botão apenas em telas menores */
+@media (max-width: 768px) {
+  .menu .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+  .menu-items.active {
+    display: flex;
+  }
+
+  .menu-items li {
+    padding: 1rem;
+  }
+
+/* Seção Contato */
+.contato {
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+
+.info,
+form {
+  flex: 1; /* Ambos ocupam o mesmo espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  background: white; /* Mantém um fundo uniforme */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.contato-info {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+.titulo-contato {
+  width: 100%; /* Faz com que o título ocupe toda a largura */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 1rem; /* Dá um espaçamento entre o título e os blocos abaixo */
+}
+.menu-scroll {
+  background: #3498db !important; /* Cor azul, altere conforme desejar */
+  transition: background 0.3s ease-in-out;
+}
+.menu ul li a {
+  color: black; /* Texto preto */
+  font-weight: bold; /* Negrito */
+}
+
+.menu ul li a:hover {
+  color: #3498db; /* Cor ao passar o mouse (opcional) */
+}
+
+/* Estilização da seção Blog */
+
+.blog .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem; /* Aumenta o espaço entre o texto e a imagem */
+}
+
+.blog .texto {
+  flex: 1; /* Faz o texto ocupar mais espaço */
+  text-align: justify;
+}
+
+.blog img {
+  max-width: 30%; /* Reduz a largura da imagem */
+  height: auto; /* Mantém a proporção */
+  max-height: 300px; /* Define um limite de altura */
+  object-fit: cover; /* Garante que a imagem se ajuste bem ao tamanho */
+}
+#blog {
+  scroll-margin-top: 100px; /* Ajusta a posição da seção ao rolar */
+  padding: 5rem 0; /* Mantém um espaçamento adequado na própria seção */
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha os elementos em telas menores */
+    text-align: center;
+  }
+
+  /* Ajustando a seção Blog */
+  #blog .container {
+    flex-direction: column; /* Empilha texto e imagem */
+    align-items: center;
+  }
+
+  #blog img {
+    max-width: 80%; /* Aumenta o tamanho da imagem no mobile */
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .texto {
+    width: 100%; /* Garante que o texto ocupa toda a largura */
+    text-align: justify;
+  }
+
+  /* Ajustando a seção Sobre */
+  .sobre .container {
+    flex-direction: column; /* Empilha imagem e texto */
+    align-items: center;
+  }
+
+  .sobre img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  /* Ajustando a seção Contato */
   .contato-info {
     flex-direction: column;
     align-items: center;
@@ -366,30 +421,102 @@ footer a.link-destaque:hover {
     text-align: center;
   }
 
-  #blog .container {
-    flex-direction: column;
-    align-items: center;
-  }
+  /* Estilização do botão */
+.btn {
+  display: inline-block;
+  background: #3498db;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
 
-  #blog img {
-    max-width: 80%;
-    margin-top: 15px;
-  }
+.btn:hover {
+  background: #2980b9;
+}
 
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
   .btn {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
+    width: 100%; /* Faz o botão ocupar toda a largura da tela */
+    text-align: center;
+    padding: 1rem; /* Ajusta o tamanho */
+    font-size: 1rem; /* Texto menor */
   }
 }
 
+.separador {
+  width: 100%;
+  height: 2px; /* Espessura da linha */
+  background: #ddd; /* Cor da linha */
+  margin: 50px 0; /* Espaçamento acima e abaixo */
+}
+
+.blog h2 {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do botão */
+.btn {
+  padding: 1.2rem 2.5rem;
+  display: inline-block;
+  margin-top: 20px;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  z-index: 9999;
+  background: #3498db;
+  color: #fff !important; /* Força a cor do texto */
+  border-radius: 5px;
+  text-decoration: none !important; /* Remove sublinhado */
+  transition: background 0.3s ease-in-out;
+  border: none; /* Remove borda padrão */
+  cursor: pointer; /* Adiciona cursor de ponteiro */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Ajuste para telas maiores */
 @media (min-width: 1024px) {
   .hero .btn {
-    display: inline-block !important;
+    padding: 1.2rem 2.5rem;
+    display: inline-block !important; /* Garante que o botão seja exibido */
+    margin-top: 20px;
     visibility: visible !important;
     opacity: 1 !important;
+    position: relative;
     z-index: 9999 !important;
+    background: #3498db;
+    color: #fff !important;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: background 0.3s ease-in-out;
   }
-}
 
-  
+  .hero .btn:hover {
+    background: #2980b9;
+  }
+
+  footer a.link-destaque {
+  background-color: white;
+  color: #2980b9;
+  padding: 4px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+  }
+
+footer a.link-destaque:hover {
+  background-color: #f0f0f0;
+  color: #1a5276;
+  }
+
+}
